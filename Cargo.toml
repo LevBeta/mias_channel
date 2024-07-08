@@ -1,0 +1,20 @@
+[package]
+name = "mias_channel"
+version = "0.1.0"
+edition = "2021"
+authors = ["Levbeta <levbetaq@gmail.com>"]
+desciption = "A library that supports bi-directional channels by wrapping others"
+license = "MIT"
+documentation = "https://docs.rs/mias_channel"
+repository = "https://github.com/Levbeta/mias_channel"
+homepage = "https://github.com/Levbeta/mias_channel"
+readme = "README.md"
+keywords = ["channel", "async", "communication", "tokio"]
+categories = ["asynchronous", "concurrency"]
+
+[dependencies]
+thiserror = "1.0.61"
+tokio = { version = "1.38.0", features = ["sync"] }
+
+[dev-dependencies]
+tokio = { version = "1.38.0", features = ["rt-multi-thread", "macros"] }
